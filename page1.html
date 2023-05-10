@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WE SAVE ANIMALS</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ff9933, #ffffff, #128807);
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>WE SAVE ANIMALS</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Adoption</a></li>
+        <li><a href="#">Volunteer</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="welcome">
+      <img src="images/Wh.jpg" alt="logo">
+      <h2>Welcome to Our Animal Shelter</h2>
+      <p>WELCOME TO SAVE ANIMALS(WSA) WELFARE TRUST.</p>
+      <p>We are a team of ardent animal lovers driven to help the voiceless.</p>
+      <p>Being humans,let's be the voice for the voiceless</p>
+      <button>Adopt Now</button>
+    </section>
+    <section id="featured-pets">
+      <h2>Featured Pets</h2>
+      <ul>
+        <li>
+          <img src="images/cat1.jpeg" alt="Cat">
+          <h3>Fluffy</h3>
+          <p>Age: 2 years<br>Breed: Domestic Short Hair</p>
+        </li>
+        <li>
+          <img src="images/dog1.jpeg" alt="Dog">
+          <h3>Buddy</h3>
+          <p>Age: 4 years<br>Breed: Golden Retriever</p>
+        </li>
+        <li>
+          <img src="images/cat2.jpeg" alt="Cat">
+          <h3>Whiskers</h3>
+          <p>Age: 1 year<br>Breed: Siamese</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Animal Shelter. All Rights Reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adoption Application</title>
+  <style>
+    /* Styles for the document */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adoption Application</h1>
+  </header>
+  
+  <main>
+    <h2>Fill out the form below to apply for adoption:</h2>
+    <form action="submit-adoption.php" method="post">
+      <fieldset>
+        <legend>Pet Information:</legend>
+        <label for="pet-name">Pet Name:</label>
+        <input type="text" id="pet-name" name="pet-name" required>
+        <br>
+        <label for="pet-type">Type of Pet:</label>
+        <select id="pet-type" name="pet-type" required>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="rabbit">Rabbit</option>
+          <option value="other">Other</option>
+        </select>
+        <br>
+        <label for="pet-breed">Breed (if known):</label>
+        <input type="text" id="pet-breed" name="pet-breed">
+        <br>
+        <label for="pet-age">Age (in years):</label>
+        <input type="number" id="pet-age" name="pet-age" min="0" max="20" step="1" required>
+        <br>
+        <label for="pet-gender">Gender:</label>
+        <input type="radio" id="pet-gender-male" name="pet-gender" value="male" required>
+        <label for="pet-gender-male">Male</label>
+        <input type="radio" id="pet-gender-female" name="pet-gender" value="female">
+        <label for="pet-gender-female">Female</label>
+        <br>
+        <label for="pet-description">Description:</label>
+        <textarea id="pet-description" name="pet-description" required></textarea>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Your Information:</legend>
+        <label for="your-name">Your Name:</label>
+        <input type="text" id="your-name" name="your-name" required>
+        <br>
+        <label for="your-email">Email:</label>
+        <input type="email" id="your-email" name="your-email" required>
+        <br>
+        <label for="your-phone">Phone:</label>
+        <input type="tel" id="your-phone" name="your-phone" required>
+        <br>
+        <label for="your-address">Address:</label>
+        <textarea id="your-address" name="your-address" required></textarea>
+      </fieldset>
+      
+      <button type="submit">Submit Application</button>
+    </form>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Animal Shelter</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>save</title>
+</head>
+<body>
+	<h1></h1>
+	<p></p>
+	<button onclick="redirectToPage2()">Next</button>
+	<script>
+		function redirectToPage2() {
+			window.location.href = "i.html";
+		}
+	</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adoption Application Details</title>
+  <style>
+    /* Styles for the document */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adoption Application Details</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Adopt</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h2>Personal Information</h2>
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Phone:</strong> <span id="phone"></span></p>
+    
+    <h2>Pet Information</h2>
+    <p><strong>Pet Name:</strong> <span id="pet-name"></span></p>
+    <p><strong>Species:</strong> <span id="species"></span></p>
+    <p><strong>Breed:</strong> <span id="breed"></span></p>
+    <p><strong>Age:</strong> <span id="age"></span></p>
+    
+    <h2>Other Information</h2>
+    <p><strong>Experience owning pets:</strong> <span id="experience"></span></p>
+    <p><strong>Reason for adoption:</strong> <span id="reason"></span></p>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Animal Shelter</p>
+  </footer>
+
+  <script>
+    // JavaScript code to retrieve and display the form data
+    const params = new URLSearchParams(window.location.search); // Get the query string parameters from the URL
+    document.getElementById('name').innerText = params.get('name');
+    document.getElementById('email').innerText = params.get('email');
+    document.getElementById('phone').innerText = params.get('phone');
+    document.getElementById('pet-name').innerText = params.get('pet-name');
+    document.getElementById('species').innerText = params.get('species');
+    document.getElementById('breed').innerText = params.get('breed');
+    document.getElementById('age').innerText = params.get('age');
+    document.getElementById('experience').innerText = params.get('experience');
+    document.getElementById('reason').innerText = params.get('reason');
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adoption Application Form</title>
+  <style>
+    /* Styles for the document */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adoption Application Form</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Adopt</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <form method="post" action="process_adoption.php">
+      <h2>Personal Information</h2>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+      
+      <label for="phone">Phone:</label>
+      <input type="tel" name="phone" id="phone" required>
+      
+      <h2>Pet Information</h2>
+      <label for="pet-name">Pet Name:</label>
+      <input type="text" name="pet-name" id="pet-name" required>
+      
+      <label for="species">Species:</label>
+      <input type="text" name="species" id="species" required>
+      
+      <label for="breed">Breed:</label>
+      <input type="text" name="breed" id="breed" required>
+      
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="age" min="0" required>
+      
+      <h2>Other Information</h2>
+      <label for="experience">Experience owning pets:</label>
+      <textarea name="experience" id="experience" required></textarea>
+      
+      <label for="reason">Reason for adoption:</label>
+      <textarea name="reason" id="reason" required></textarea>
+      
+      <input type="submit" value="Submit Application">
+    </form>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Animal Shelter</p>
+  </footer>
+</body>
+</html>
+
